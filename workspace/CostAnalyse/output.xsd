@@ -1,0 +1,95 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="trace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="parameter"/>
+        <xs:element type="xs:string" name="cloud"/>
+        <xs:element type="xs:string" name="dependencies"/>
+        <xs:element type="xs:string" name="historicaldata"/>
+        <xs:element name="categories">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="predictioncategory" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:double" name="shortestmakespan"/>
+                    <xs:element type="xs:double" name="cheapestcost"/>
+                    <xs:element name="deadlinecategories">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="deadlinecategory" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="plan">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:double" name="maxAlpha" minOccurs="0"/>
+                                      <xs:element type="xs:double" name="maxAlphaMakespan" minOccurs="0"/>
+                                      <xs:element type="xs:double" name="deadline"/>
+                                      <xs:element type="xs:double" name="plannedmakespan"/>
+                                      <xs:element type="xs:double" name="plannedcost"/>
+                                      <xs:element type="xs:double" name="cheapestplannedcost"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="runs">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="run" maxOccurs="unbounded" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="static">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:double" name="cost"/>
+                                                  <xs:element type="xs:double" name="deadline"/>
+                                                  <xs:element type="xs:double" name="makespan"/>
+                                                  <xs:element type="xs:double" name="duration"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="dynamic">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:double" name="cost"/>
+                                                  <xs:element type="xs:double" name="deadline"/>
+                                                  <xs:element type="xs:double" name="makespan"/>
+                                                  <xs:element type="xs:double" name="duration"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="real">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element type="xs:double" name="cheapestcost"/>
+                                                  <xs:element type="xs:double" name="fasttime"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="exTimes" use="required"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:double" name="deadlinefactor" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="method" use="required"/>
+                  <xs:attribute type="xs:double" name="value" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:long" name="runid"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cloud name="A CO">
+<description>
+Amazon Comput Optimized Cloud
+atulength in seconds
+costperatu in 0.1 US cent
+</description>
+	<atulength>3600.0</atulength>
+	<instancesizes>
+		<instancesize name="S1">
+			<costperatu>105</costperatu>
+			<speedup>6.36</speedup>
+		</instancesize>
+		<instancesize name="S2">
+			<costperatu>210</costperatu>
+			<speedup>10.77</speedup>
+		</instancesize>
+		<instancesize name="S3">
+			<costperatu>420</costperatu>
+			<speedup>16.47</speedup>
+		</instancesize>
+				<instancesize name="S4">
+			<costperatu>840</costperatu>
+			<speedup>22.00</speedup>
+		</instancesize>
+		<instancesize name="S5">
+			<costperatu>1680</costperatu>
+			<speedup>26.34</speedup>
+		</instancesize>
+
+	</instancesizes>
+</cloud>
+
+
+
+  
+
+
+
+
+
+
+
+

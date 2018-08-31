@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<executionprofile name="all profiles">
+	<description>
+This file contains all profiles
+	</description>
+	<workflows>
+
+		<workflow name="Montage">
+
+			<jobs>  
+				<job name = "mProjectPP">
+
+					<count>2102</count>
+					<runtime>
+						<mean>1.73</mean>
+						<var>0.09</var>
+					</runtime>
+					<inputs>
+						<mean>2.05</mean>
+						<var>0.07</var>
+					</inputs>
+					<outputs>
+						<mean>8.09</mean>
+						<var>0.31</var>
+					</outputs>
+				</job>
+
+				<job name = "mDiffFit">
+
+					<count>6172</count>
+					<runtime>
+						<mean>0.66</mean>
+						<var>0.56</var>
+					</runtime>
+					<inputs>
+						<mean>16.56</mean>
+						<var>0.53</var>
+					</inputs>
+					<outputs>
+						<mean>0.64</mean>
+						<var>046</var>
+					</outputs>
+				</job>
+
+				<job name = "mConcatFit">
+
+					<count>1</count>
+					<runtime>
+						<mean>143.26</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>1.95</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>1.22</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "mBgModel">
+
+					<count>1</count>
+					<runtime>
+						<mean>384.49</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>1.56</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0.1</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+
+				<job name = "mBackground">
+
+					<count>2102</count>
+					<runtime>
+						<mean>1.72</mean>
+						<var>0.65</var>
+					</runtime>
+					<inputs>
+						<mean>8.36</mean>
+						<var>0.34</var>
+					</inputs>
+					<outputs>
+						<mean>8.09</mean>
+						<var>0.31</var>
+					</outputs>
+				</job>
+
+				<job name = "mImgTbl">
+
+					<count>17</count>
+					<runtime>
+						<mean>2.78</mean>
+						<var>1.37</var>
+					</runtime>
+					<inputs>
+						<mean>1.55</mean>
+						<var>0.38</var>
+					</inputs>
+					<outputs>
+						<mean>0.12</mean>
+						<var>0.03</var>
+					</outputs>
+				</job>
+
+
+				<job name = "mAdd">
+
+					<count>17</count>
+					<runtime>
+						<mean>282.37</mean>
+						<var>137.93</var>
+					</runtime>
+					<inputs>
+						<mean>1102.57</mean>
+						<var>302.84</var>
+					</inputs>
+					<outputs>
+						<mean>775.84</mean>
+						<var>196.44</var>
+					</outputs>
+				</job>
+
+				<job name = "mShrink">
+
+					<count>16</count>
+					<runtime>
+						<mean>66.1</mean>
+						<var>46.37</var>
+					</runtime>
+					<inputs>
+						<mean>411.5</mean>
+						<var>7.09</var>
+					</inputs>
+					<outputs>
+						<mean>0.49</mean>
+						<var>0.01</var>
+					</outputs>
+				</job>
+
+				<job name = "mJPEG">
+
+					<count>1</count>
+					<runtime>
+						<mean>0.64</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>25.33</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0.39</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+			</jobs>
+		</workflow>
+
+
+		<workflow name="CyberShake">
+
+			<jobs>  
+				<job name = "ExtractSGT">
+
+					<count>5939</count>
+					<runtime>
+						<mean>110.58</mean>
+						<var>141.2</var>
+					</runtime>
+					<inputs>
+						<mean>173.4</mean>
+						<var>177.7</var>
+					</inputs>
+					<outputs>
+						<mean>155.86</mean>
+						<var>176.48</var>
+					</outputs>
+				</job>
+
+				<job name = "SeismogramSynthesis">
+
+					<count>404864</count>
+					<runtime>
+						<mean>79.47</mean>
+						<var>70.86</var>
+					</runtime>
+					<inputs>
+						<mean>547.16</mean>
+						<var>324.92</var>
+					</inputs>
+					<outputs>
+						<mean>0.02</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "ZipSeis">
+
+					<count>78</count>
+					<runtime>
+						<mean>265.73</mean>
+						<var>275.04</var>
+					</runtime>
+					<inputs>
+						<mean>118.95</mean>
+						<var>7.88</var>
+					</inputs>
+					<outputs>
+						<mean>101.05</mean>
+						<var>14.36</var>
+					</outputs>
+				</job>
+
+				<job name = "PeakValCalcOkaya">
+
+					<count>404864</count>
+					<runtime>
+						<mean>0.55</mean>
+						<var>2.48</var>
+					</runtime>
+					<inputs>
+						<mean>0.02</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+
+				<job name = "ZipPSA">
+
+					<count>78</count>
+					<runtime>
+						<mean>195.8</mean>
+						<var>237.99</var>
+					</runtime>
+					<inputs>
+						<mean>1.07</mean>
+						<var>0.07</var>
+					</inputs>
+					<outputs>
+						<mean>2.26</mean>
+						<var>0.15</var>
+					</outputs>
+				</job>
+
+			</jobs>
+		</workflow>
+
+
+		<workflow name="Epigenmoics">
+
+			<jobs>  
+				<job name = "fastq2bfq_chr21">
+
+					<count>128</count>
+					<runtime>
+						<mean>1.4</mean>
+						<var>0.24</var>
+					</runtime>
+					<inputs>
+						<mean>10.09</mean>
+						<var>1.73</var>
+					</inputs>
+					<outputs>
+						<mean>2.22</mean>
+						<var>0.4</var>
+					</outputs>
+				</job>
+
+				<job name = "pileup_chr21">
+
+					<count>1</count>
+					<runtime>
+						<mean>55.95</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>151.82</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>83.95</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+
+				<job name = "mapMerge_chr21">
+
+					<count>8</count>
+					<runtime>
+						<mean>11.01</mean>
+						<var>12.18</var>
+					</runtime>
+					<inputs>
+						<mean>27.68</mean>
+						<var>32.49</var>
+					</inputs>
+					<outputs>
+						<mean>29.71</mean>
+						<var>32.89</var>
+					</outputs>
+				</job>
+
+
+				<job name = "map_chr21">
+
+					<count>128</count>
+					<runtime>
+						<mean>201.89</mean>
+						<var>21.91</var>
+					</runtime>
+					<inputs>
+						<mean>138.76</mean>
+						<var>0.8</var>
+					</inputs>
+					<outputs>
+						<mean>0.9</mean>
+						<var>0.22</var>
+					</outputs>
+				</job>
+
+
+				<job name = "sol2sanger_chr21">
+
+					<count>128</count>
+					<runtime>
+						<mean>0.48</mean>
+						<var>0.14</var>
+					</runtime>
+					<inputs>
+						<mean>13.15</mean>
+						<var>2.25</var>
+					</inputs>
+					<outputs>
+						<mean>10.09</mean>
+						<var>1.73</var>
+					</outputs>
+				</job>
+
+
+				<job name = "filterContams_chr21">
+
+					<count>128</count>
+					<runtime>
+						<mean>2.47</mean>
+						<var>0.43</var>
+					</runtime>
+					<inputs>
+						<mean>13.25</mean>
+						<var>2.26</var>
+					</inputs>
+					<outputs>
+						<mean>13.25</mean>
+						<var>2.26</var>
+					</outputs>
+				</job>
+
+
+				<job name = "maqindex_chr21">
+
+					<count>1</count>
+					<runtime>
+						<mean>43.57</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>214</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>107.53</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+
+				<job name = "fastqSplit_chr21">
+
+					<count>7</count>
+					<runtime>
+						<mean>34.32</mean>
+						<var>8.94</var>
+					</runtime>
+					<inputs>
+						<mean>242.29</mean>
+						<var>82.6</var>
+					</inputs>
+					<outputs>
+						<mean>242.29</mean>
+						<var>82.6</var>
+					</outputs>
+				</job>
+
+			</jobs>
+		</workflow>
+
+		<workflow name="LIGO">
+
+			<jobs>  
+				<job name = "TmpltBank">
+
+					<count>29</count>
+					<runtime>
+						<mean>497.23</mean>
+						<var>45.78</var>
+					</runtime>
+					<inputs>
+						<mean>552.66</mean>
+						<var>6.04</var>
+					</inputs>
+					<outputs>
+						<mean>0.04</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "Inspiral">
+
+					<count>358</count>
+					<runtime>
+						<mean>472.89</mean>
+						<var>453.18</var>
+					</runtime>
+					<inputs>
+						<mean>553.16</mean>
+						<var>5.44</var>
+					</inputs>
+					<outputs>
+						<mean>0.05</mean>
+						<var>0.07</var>
+					</outputs>
+				</job>
+
+				<job name = "Thinca">
+
+					<count>290</count>
+					<runtime>
+						<mean>0.64</mean>
+						<var>1.06</var>
+					</runtime>
+					<inputs>
+						<mean>0.53</mean>
+						<var>0.92</var>
+					</inputs>
+					<outputs>
+						<mean>0</mean>
+						<var>0.01</var>
+					</outputs>
+				</job>
+
+
+
+				<job name = "TrigBank">
+
+					<count>200</count>
+					<runtime>
+						<mean>0.13</mean>
+						<var>0.14</var>
+					</runtime>
+					<inputs>
+						<mean>0.03</mean>
+						<var>0.05</var>
+					</inputs>
+					<outputs>
+						<mean>0</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+
+
+
+			</jobs>
+		</workflow> 
+		<workflow name="SIPHT">
+
+			<jobs>  
+				<job name = "Patser">
+
+					<count>19</count>
+					<runtime>
+						<mean>0.96</mean>
+						<var>0.08</var>
+					</runtime>
+					<inputs>
+						<mean>2.7</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+
+				<job name = "Patser_concate">
+
+					<count>1</count>
+					<runtime>
+						<mean>0.03</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>0.14</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0.14</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+
+				<job name = "Transterm">
+
+					<count>1</count>
+					<runtime>
+						<mean>32.41</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>2.93</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+
+				<job name = "Findterm">
+
+					<count>1</count>
+					<runtime>
+						<mean>594.94</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>15.14</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>379.01</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+
+				<job name = "RNAMotif">
+
+					<count>1</count>
+					<runtime>
+						<mean>25.69</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>2.91</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0.04</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "Blast">
+
+					<count>1</count>
+					<runtime>
+						<mean>3311.12</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>808.17</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>565.06</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+
+				<job name = "SRNA">
+
+					<count>1</count>
+					<runtime>
+						<mean>12.44</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>47.98</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>1.32</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "FFN_Parse">
+
+					<count>1</count>
+					<runtime>
+						<mean>0.73</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>5.03</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>2.51</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "Blast_synteny">
+
+					<count>1</count>
+					<runtime>
+						<mean>3.37</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>1.76</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0.42</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "Blast_candidate">
+
+					<count>1</count>
+					<runtime>
+						<mean>0.6</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>0.27</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0.06</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "Blast_QRNA">
+
+					<count>1</count>
+					<runtime>
+						<mean>440.88</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>804.6</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>567.01</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "Blast_paralogues">
+
+					<count>1</count>
+					<runtime>
+						<mean>0.68</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>0.12</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0.03</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "SRNA_annotate">
+
+					<count>1</count>
+					<runtime>
+						<mean>0.14</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>0.4</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0.03</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+			</jobs>
+		</workflow>
+	</workflows>
+</executionprofile>

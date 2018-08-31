@@ -1,0 +1,79 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="parameterlist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="name"/>
+        <xs:element type="xs:string" name="description"/>
+        <xs:element name="cloudFile">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="transfer"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Profilefile">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="transfer"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="deadLineFactors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:double" name="factor" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="alphas">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:double" name="alpha" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dependencyGraphFile">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="transfer"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="scale" type="xs:double" minOccurs="0" />
+        <xs:element name="executionTimesFiles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="excecutionTimesFile" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="tranfer"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="algorithmName"/>
+        <xs:element type="xs:string" name="suffix" minOccurs="0"/>
+        <xs:element name="parameters" minOccurs="0">
+            <xs:complexType>
+                <xs:sequence>
+                    <xs:element name="parameter" maxOccurs="unbounded">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="key" type="xs:string" />
+                                <xs:element name="value" type="xs:string" />
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="stdout"/>
+        <xs:element type="xs:string" name="resultout"/>
+        <xs:element type="xs:string" name="outputpath"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

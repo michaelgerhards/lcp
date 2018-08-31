@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cloud name="A CO">
+	<description>
+Amazon Compute Optimized Cloud
+taken from paper
+costperatu in 0.1 US cent
+
+taken from 
+Performance Analysis of Cloud Computing
+Services for Many-Tasks Scientific Computing
+Alexandru Iosup, Member, IEEE, Simon Ostermann, M. Nezih Yigitbasi, Member, IEEE,
+Radu Prodan, Member, IEEE, Thomas Fahringer, Member, IEEE, and Dick H.J. Epema, Member, IEEE
+IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS, VOL. 22, NO. 6, JUNE 2011
+
+costs from table 1
+speedups from table 9
+	</description>
+	<atulength>3600.0</atulength>
+	<instancesizes>
+		<instancesize name="S1">
+			<costperatu>100</costperatu>
+			<speedup>1.96</speedup>
+		</instancesize>
+		<instancesize name="S2">
+			<costperatu>400</costperatu>
+			<speedup>7.15</speedup>
+		</instancesize>
+		<instancesize name="S3">
+			<costperatu>800</costperatu>
+			<speedup>11.38</speedup>
+		</instancesize>
+	</instancesizes>
+</cloud>

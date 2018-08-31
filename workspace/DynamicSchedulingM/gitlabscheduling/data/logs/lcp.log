@@ -1,0 +1,19 @@
+2017-08-17 21:22:45,592 INFO  [main] LCP: 	
+2017-08-17 21:22:45,592 INFO  [main] LCP: 	created algorithm: Low Complexity Planning
+2017-08-17 21:22:45,593 INFO  [main] LCP: 	alpha= 0.3
+2017-08-17 21:22:45,594 INFO  [main] LCP: 	start schedule:	Epigenomics_9970.xml
+2017-08-17 21:22:45,602 INFO  [main] LCP: 	calcEST ms:	8
+2017-08-17 21:22:45,608 INFO  [main] LCP: 	calcEFT ms:	6
+2017-08-17 21:22:45,619 INFO  [main] LCP: 	calcTopOrder ms:	11
+2017-08-17 21:22:45,641 INFO  [main] LCP: 	calcDeadlines ms:	22
+2017-08-17 21:22:45,679 INFO  [main] LCP: 	sortTasks ms:	38
+2017-08-17 21:22:46,727 INFO  [main] LCP: 	assignTasks ms:	1048	distributed to:
+2017-08-17 21:22:46,727 INFO  [main] LCP: 		getEarliestStartTime ms:	4
+2017-08-17 21:22:46,727 INFO  [main] LCP: 		getBestSolutionOnExistingResource ms:	904	with count	14947	distributed to:
+2017-08-17 21:22:46,727 INFO  [main] LCP: 		getBestSolutionOnExistingResource2 ms:	599	with count	14947	distributed to:
+2017-08-17 21:22:46,727 INFO  [main] LCP: 			getBestSolutionOnExistingResource ms:	108	before trycount:	5258151	before acceptcount:	17181	before takecount:	2700
+2017-08-17 21:22:46,727 INFO  [main] LCP: 			getBestSolutionOnExistingResource ms:	63	after trycount:	5253190	after acceptcount:	3122	after takecount:	491
+2017-08-17 21:22:46,727 INFO  [main] LCP: 			getBestSolutionOnExistingResource ms:	186	between trycount:	9900	between acceptcount:	4512	between takecount:	4512
+2017-08-17 21:22:46,728 INFO  [main] LCP: 		getBestSolutionOnNewResource ms:		3	new trycount:	16296	new acceptcount:	13577	new takecount:	2266
+2017-08-17 21:22:46,728 INFO  [main] LCP: 		assignTaskToResource ms:	126
+2017-08-17 21:22:46,728 INFO  [main] LCP: 	total ms:	1135

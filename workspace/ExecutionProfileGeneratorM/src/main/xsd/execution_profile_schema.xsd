@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="executionprofile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="description"/>
+        <xs:element name="workflows">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="workflow" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="jobs">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="job" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:int" name="count"/>
+                                <xs:element name="runtime">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:double" name="mean"/>
+                                      <xs:element type="xs:double" name="var"/>
+									  <xs:element type="xs:double" name="max"/>
+									  <xs:element type="xs:double" name="min"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="inputs">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:double" name="mean"/>
+                                      <xs:element type="xs:double" name="var"/>
+									  <xs:element type="xs:double" name="max"/>
+									  <xs:element type="xs:double" name="min"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="outputs">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element type="xs:double" name="mean"/>
+                                      <xs:element type="xs:double" name="var"/>
+									  <xs:element type="xs:double" name="max"/>
+									  <xs:element type="xs:double" name="min"/>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="name" use="required"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="name"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

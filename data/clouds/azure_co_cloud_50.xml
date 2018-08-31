@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cloud name="A CO">
+<description>
+Azure Compute Optimized Cloud 50 % parallelism
+atulength in seconds
+costperatu in 0.1 US cent
+</description>
+	<atulength>3600.0</atulength>
+	<instancesizes>
+		<instancesize name="S1">
+			<costperatu>1970</costperatu>
+			<speedup>1</speedup>
+		</instancesize>
+		<instancesize name="S2">
+			<costperatu>4470</costperatu>
+			<speedup>1.058824</speedup>
+		</instancesize>
+	</instancesizes>
+</cloud>

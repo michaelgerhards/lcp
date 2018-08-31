@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cloud name="3 homogen instances">
+<description>
+cloud with 3 homogen instances
+</description>
+	<atulength>3600.0</atulength>
+	<instancesizes>
+		<instancesize name="S1">
+			<costperatu>1.0</costperatu>
+			<speedup>1.0</speedup>
+		</instancesize>
+		<instancesize name="S2">
+			<costperatu>2.0</costperatu>
+			<speedup>2.0</speedup>
+		</instancesize>
+		<instancesize name="S3">
+			<costperatu>3.0</costperatu>
+			<speedup>3.0</speedup>
+		</instancesize>
+	</instancesizes>
+</cloud>

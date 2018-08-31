@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<executionprofile name="dummy example">
+	<description>
+This file contains all profiles for the poster example
+	</description>
+	<workflows>
+
+		<workflow name="dummy">
+
+			<jobs>  
+				<job name = "fork">
+
+					<count>1</count>
+					<runtime>
+						<mean>900</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>0</mean>
+						<var>0.</var>
+					</inputs>
+					<outputs>
+						<mean>0.0</mean>
+						<var>0.0</var>
+					</outputs>
+				</job>
+
+				<job name = "compute">
+
+					<count>4</count>
+					<runtime>
+						<mean>1200</mean>
+						<var>0.0</var>
+					</runtime>
+					<inputs>
+						<mean>0.0</mean>
+						<var>0.0</var>
+					</inputs>
+					<outputs>
+						<mean>0.0</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+
+				<job name = "join">
+
+					<count>1</count>
+					<runtime>
+						<mean>900</mean>
+						<var>0</var>
+					</runtime>
+					<inputs>
+						<mean>0.0</mean>
+						<var>0</var>
+					</inputs>
+					<outputs>
+						<mean>0.0</mean>
+						<var>0</var>
+					</outputs>
+				</job>
+</jobs>
+				
+		</workflow>
+
+	</workflows>
+</executionprofile>

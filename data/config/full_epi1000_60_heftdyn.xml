@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameterlist>
+	<name>ScheduleSingleFrameworkParameters</name>
+	<description/>
+	<cloudFile>
+		<!--	D:\SVNneu\development\scheduling\data\clouds\single_cloud.xml-->
+	D:\SVNneu\development\scheduling\data\clouds\amazon_co_cloud.xml
+	</cloudFile>
+	<Profilefile>
+		D:\SVNneu\development\scheduling\data\executionprofiles\trainingsetdata_profile_quantile_60.xml
+	</Profilefile>
+	<deadLineFactors>
+		<factor>1.5</factor>
+		<!--<factor>1.7</factor>-->
+		<factor>2.0</factor>
+		<!--<factor>2.5</factor>-->
+		<factor>3.0</factor>
+		<factor>5.0</factor>
+		<factor>7.0</factor>
+	</deadLineFactors>
+	<alphas>
+		<alpha>0.00</alpha>
+	</alphas>
+	<dependencyGraphFile>
+		D:\SVNneu\development\scheduling\data\dags\Epigenomics_997_00.xml
+	</dependencyGraphFile>
+	<executionTimesFiles>
+		<excecutionTimesFile>D:\SVNneu\development\scheduling\data\executiontimes\Epigenomics_997_00.xml</excecutionTimesFile>
+		<excecutionTimesFile>D:\SVNneu\development\scheduling\data\executiontimes\Epigenomics_997_01.xml</excecutionTimesFile>
+		<excecutionTimesFile>D:\SVNneu\development\scheduling\data\executiontimes\Epigenomics_997_02.xml</excecutionTimesFile>
+		<excecutionTimesFile>D:\SVNneu\development\scheduling\data\executiontimes\Epigenomics_997_03.xml</excecutionTimesFile>
+		<excecutionTimesFile>D:\SVNneu\development\scheduling\data\executiontimes\Epigenomics_997_04.xml</excecutionTimesFile>
+	</executionTimesFiles>
+	<algorithmName>
+		HEFTdyn
+	</algorithmName>
+	<stdout>
+		System.out
+	</stdout>
+	<resultout>out_full_epi1000_60_heftdyn.xml</resultout>
+	<outputpath>D:\SVNneu\development\scheduling\data\dynamicOutput\</outputpath>
+</parameterlist>

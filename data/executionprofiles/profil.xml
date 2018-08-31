@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<executionprofile name="Generated">
+    <description>Generated Profile</description>
+    <workflows>
+        <workflow name="all">
+            <jobs>
+                <job name="mapMerge_chr21">
+                    <count>0</count>
+                    <runtime>
+                        <mean>17.725</mean>
+                        <var>0.0</var>
+                    </runtime>
+                    <inputs>
+                        <mean>4.3032532E7</mean>
+                        <var>0.0</var>
+                    </inputs>
+                    <outputs>
+                        <mean>4.1385276E7</mean>
+                        <var>0.0</var>
+                    </outputs>
+                </job>
+                <job name="filterContams_chr21">
+                    <count>0</count>
+                    <runtime>
+                        <mean>8.379333</mean>
+                        <var>0.0</var>
+                    </runtime>
+                    <inputs>
+                        <mean>6.8673016E7</mean>
+                        <var>0.0</var>
+                    </inputs>
+                    <outputs>
+                        <mean>6.8673016E7</mean>
+                        <var>0.0</var>
+                    </outputs>
+                </job>
+                <job name="fastqSplit_chr21">
+                    <count>0</count>
+                    <runtime>
+                        <mean>58.756668</mean>
+                        <var>0.0</var>
+                    </runtime>
+                    <inputs>
+                        <mean>3.43365088E8</mean>
+                        <var>0.0</var>
+                    </inputs>
+                    <outputs>
+                        <mean>3.43365088E8</mean>
+                        <var>0.0</var>
+                    </outputs>
+                </job>
+                <job name="map_chr21">
+                    <count>0</count>
+                    <runtime>
+                        <mean>3709.706</mean>
+                        <var>0.0</var>
+                    </runtime>
+                    <inputs>
+                        <mean>1.27260723E9</mean>
+                        <var>0.0</var>
+                    </inputs>
+                    <outputs>
+                        <mean>7355970.5</mean>
+                        <var>0.0</var>
+                    </outputs>
+                </job>
+                <job name="sol2sanger_chr21">
+                    <count>0</count>
+                    <runtime>
+                        <mean>2.3886669</mean>
+                        <var>0.0</var>
+                    </runtime>
+                    <inputs>
+                        <mean>3.4375388E7</mean>
+                        <var>0.0</var>
+                    </inputs>
+                    <outputs>
+                        <mean>2.761357E7</mean>
+                        <var>0.0</var>
+                    </outputs>
+                </job>
+                <job name="maqindex_chr21">
+                    <count>0</count>
+                    <runtime>
+                        <mean>0.05</mean>
+                        <var>0.0</var>
+                    </runtime>
+                    <inputs>
+                        <mean>5.0298176E7</mean>
+                        <var>0.0</var>
+                    </inputs>
+                    <outputs>
+                        <mean>717650.5</mean>
+                        <var>0.0</var>
+                    </outputs>
+                </job>
+                <job name="fastq2bfq_chr21">
+                    <count>0</count>
+                    <runtime>
+                        <mean>3.8913336</mean>
+                        <var>0.0</var>
+                    </runtime>
+                    <inputs>
+                        <mean>2.761357E7</mean>
+                        <var>0.0</var>
+                    </inputs>
+                    <outputs>
+                        <mean>6767493.0</mean>
+                        <var>0.0</var>
+                    </outputs>
+                </job>
+                <job name="pileup_chr21">
+                    <count>0</count>
+                    <runtime>
+                        <mean>1504.59</mean>
+                        <var>0.0</var>
+                    </runtime>
+                    <inputs>
+                        <mean>1.26239104E9</mean>
+                        <var>0.0</var>
+                    </inputs>
+                    <outputs>
+                        <mean>5199807.0</mean>
+                        <var>0.0</var>
+                    </outputs>
+                </job>
+            </jobs>
+        </workflow>
+    </workflows>
+</executionprofile>

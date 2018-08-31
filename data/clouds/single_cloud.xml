@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cloud name="single instance">
+<description>
+cloud with a single instance
+</description>
+	<atulength>3600.0</atulength>
+	<instancesizes>
+		<instancesize name="S0">
+			<costperatu>1000.0</costperatu>
+			<speedup>1.0</speedup>
+		</instancesize>
+	</instancesizes>
+</cloud>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameterlist>
+	<name>sipht10000_60_pcp.xml</name>
+	<description/>
+	<cloudFile>
+	\gitlab\scheduling\data\clouds\paper_cloud.xml
+	</cloudFile>
+	<Profilefile>
+		\gitlab\scheduling\data\executionprofiles\generated_profile.xml
+	</Profilefile>
+	<deadLineFactors>
+		<!--<factor>2.0</factor>-->
+		<factor>3.0</factor>
+		<!--<factor>4.0</factor>-->
+	</deadLineFactors>
+	<alphas>
+		<!--<alpha>0.6745</alpha>--><!-- 75 % quantile -->
+		<alpha>0.2533</alpha><!-- 60 % quantile -->
+	</alphas>
+	<dependencyGraphFile>
+		\gitlab\scheduling\data\dags\Sipht_10000.xml
+	</dependencyGraphFile>
+	<scale>2</scale>
+	<executionTimesFiles>
+	    <excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+		<excecutionTimesFile>bullshit</excecutionTimesFile>
+	</executionTimesFiles>
+	<algorithmName>
+		PCP
+	</algorithmName>
+	<stdout>
+		System.out
+	</stdout>
+	<resultout>out_sipht10000_60_pcp.xml</resultout>
+	<outputpath>\gitlab\scheduling\data\dynamicOutput\</outputpath>
+</parameterlist>
